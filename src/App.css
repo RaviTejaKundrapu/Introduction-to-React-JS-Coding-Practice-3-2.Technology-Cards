@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Write CSS code here */
+
+.bg-container {
+  background-color: #f4faff;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 43px;
+  font-weight: 900;
+  color: #171f46;
+  text-align: center;
+  margin-top: 43px;
+}
+.paragraph {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748b;
+  text-align: center;
+  padding: 9px;
+  margin-top: 10px;
+}
+.listContainer {
+  width: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardSizing {
+  width: 100%;
+  border-left: 1px solid #c3d4e8;
+  border-right: 1px solid #c3d4e8;
+  border-bottom: 1px solid #c3d4e8;
+  border-radius: 12px;
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px;
+  background-color: white;
+}
+
+@media all and (min-width: 992px) {
+  .listContainer {
+    width: 90%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cardSizing {
+    margin-left: 16px;
+    width: 33%;
+  }
+}
